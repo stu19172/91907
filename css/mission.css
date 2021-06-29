@@ -1,0 +1,121 @@
+/*CSS document for mission.html*/
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 100px;
+  padding-left: 5%;
+  padding-right: 6%;
+  padding-bottom: 10vh;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Column 1's text decoration*/
+.column p {
+  color: #33A0BD; /*Cyan*/
+  font-size: 17px;
+  display: flex;
+  padding-top: 4vh;
+}
+
+.column h2 {
+  padding-top: 5vh;
+  color: #2153BD; /*Light blue*/
+  font-size: 30px;
+}
+
+/*Column's mobile view*/
+@media screen and (max-width: 700px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*Second column for mobile page*/
+.column2 {
+  float: left;
+  padding: 75px;
+  width: 100%;
+  background: #33A0BD; /*Cyan*/
+}
+
+.column2 p {
+  color: #FFF; /*White*/
+  font-size: 17px;
+  display: flex;
+  padding-top: 4vh;
+}
+
+.column2 h2 {
+  padding-top: 0;
+  color: #2153BD; /*Light blue*/
+  font-size: 30px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column3 {
+  float: left;
+  width: 50%;
+  padding: 100px;
+  padding-left: 5%;
+  padding-right: 6%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Column 1's text decoration*/
+.column3 p {
+  color: #FFF; /*White*/
+  font-size: 15px;
+  display: flex;
+  padding-top: 4vh;
+}
+
+.column3 h2 {
+  padding-top: 5vh;
+  color: #2153BD; /*Light blue*/
+  font-size: 30px;
+}
+
+/*Column's mobile view*/
+@media screen and (max-width: 700px) {
+  .column3 {
+    width: 100%;
+  }
+}
+
+/*Scroll to top button*/
+#myBtn {
+  display: block;
+  position: fixed; /*Making sure button sticks to the credits page*/
+  /*Button floating bottom right*/
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  border: 2px solid #FFF; /*White border*/
+  outline: none;
+  cursor: pointer;
+  padding: 14px;
+  color: #FFF; /*White*/
+  background-color: #171670; /*Dark blue*/
+}
+
+/*Hovered button*/
+#myBtn:hover {
+  background: #FFF; /*White*/
+  color: #171670; /*Dark blue*/
+  transition: 0.4s; /*4 seconds*/
+}

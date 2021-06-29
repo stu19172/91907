@@ -1,0 +1,164 @@
+/*CSS document for creating navigation bar, mobile view and footer
+for all pages*/
+
+/*Importing Roboto font from Google Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic);
+
+/*Setting every web page's box-sizing, margin and padding*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Setting the website's font to roboto*/
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;/*This sizing is for placeholder text in the contact page*/
+}
+
+/*Whole website's background*/
+body {
+  background: #2153BD; /*Light blue*/
+  margin: auto;
+  background-image: url('../img/website.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*Creating the navigation bar's block*/
+header {
+  background: #171670; /*Dark blue*/
+  color: #FFF; /*White*/
+  padding: 20px 60px;
+  display: inline-block;
+  align-items: baseline;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+/*Positioning navigation bar's title "Clean Coastlines"*/
+header h1 {
+  font-size: 19px;
+  flex-grow: 1;
+}
+
+/*Positioning website image, aligning with the title*/
+header h1 img {
+  width: 50px;
+  float: left;
+  flex-grow: 1;
+  padding: 0 10px;
+  margin-top: -1vh;
+}
+
+/*Making sure the title remains white*/
+header h1 a {
+  text-decoration: none; /*Remove its underline*/
+  color: #FFF; /*White*/
+}
+
+/*Positioning the subheadings*/
+header nav a {
+  display: inline-block;
+  justify-content: space-between;
+  color: #FFF;
+  font-size: 15px;
+  margin: 0 10px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+/*The color of the subheading, when user hovers over it*/
+header nav a:hover {
+  color: #33A0BD; /*Cyan*/
+}
+
+/*When the user access page eg."Home" will be colored light blue*/
+header nav a.active {
+  color: #33A0BD;
+}
+
+/*Making sure the navigation's content aligns on the baseline, and is
+flexible, when users drag the computer screen tab*/
+header .container {
+  display: flex;
+  align-items: baseline;
+}
+
+/*Mobile icon "MENU" does not appear, if not on mobile view*/
+header .menu-button {
+  display: none;
+}
+
+/*If the screen's width falls bellow the max-width 700px, then mobile
+view gets activated*/
+@media only screen and (max-width: 700px) {
+
+  /*Mobile view icon "MENU"*/
+  header .menu-button {
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /*Mobile icon's color when hovered*/
+  header .menu-button:hover {
+    color: #33A0BD; /*Cyan*/
+  }
+
+  /*Making sure the navigation on mobile does not appear messy*/
+  header nav {
+    width: 100%;
+    height: 22vh;
+  }
+
+  /*When user clicks on MENU, below will appear a block with navigation
+  subheadings appearing vertically on the center*/
+  header nav a {
+    display: block;
+    border-top: 1px solid #FFF; /*White border*/
+    margin: 0;
+    text-align: center; /*Aligning subheadings center*/
+    padding: 7px 0 7px; /*Positioning navigation bar subheadings*/
+  }
+
+  /*Making sure the navigation's container is flexible when warped*/
+  header .container {
+    flex-wrap: wrap;
+  }
+
+  /*The navigation subheadings do not appear, if the users do not
+  click on MENU*/
+  header nav.hide-on-mobile {
+  display: none;
+  }
+
+}
+
+/*Website's footer*/
+footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  padding: 5px 5px;
+  text-align: center;
+  background: #171670; /*Dark blue*/
+  cursor: pointer;
+}
+
+/*Footer changes color, if user hovers over it to access the credits page*/
+footer:hover {
+  background: #2153BD; /*Light blue*/
+}
+
+/*Keeping the subheading white*/
+footer h3 a {
+    color: #FFF; /*White*/
+    text-decoration: none; /*Removing underlines*/
+}

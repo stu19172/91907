@@ -1,0 +1,138 @@
+/*CSS document for credits.html*/
+
+/*Credits page heading*/
+h2 {
+  padding-top: 14vh;
+  font-size: 50px;
+  text-align: center;
+  color: #2153BD; /*Light blue*/
+}
+
+/*Image's name, owner, date, liscence, and where the images came from*/
+h4 {
+  color: #FFF; /*White*/
+  padding-top: 1.5vh;
+}
+
+/*Those are for links that take users to Sustainable Coastline's Flickr account*/
+h4 a {
+  color: #33A0BD; /*Cyan*/
+}
+
+/*When users hover over the link, it transitions to white*/
+h4 a:hover {
+  color: #FFF; /*White*/
+  transition: 0.4s; /*4 seconds*/
+}
+
+/*Customising paragraph text*/
+p {
+  color: #FFF; /*White*/
+  text-align: center;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 1vh;
+  font-size: 20px;
+}
+
+/*Positioning series of images that I have used from online*/
+.gallery {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+/*Editing image's size and adding a border around those images*/
+.gallery img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #FFF; /*White border*/
+}
+
+/*Padding the images*/
+.responsive {
+  padding: 0 30px;
+  float: left;
+  width: 25%;
+}
+
+/*When user drags screen at max-width 100, images will display two columns
+with six rows*/
+@media only screen and (max-width: 1000px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+/*If the screen falls under 700px max width, then images will display
+one column with twelve rows*/
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/*Positioning the summary section of the website, where it summarises the whole
+website*/
+.conclusion {
+  float: left;
+  padding: 40px;
+  padding-top: 30vh;
+  padding-bottom: 21vh;
+  width: 100%;
+  background: #33A0BD; /*Cyan*/
+}
+
+/*Customising heading text for summary*/
+.conclusion h2 {
+  padding-top: 0;
+  color: #2153BD; /*Light blue*/
+  font-size: 40px;
+  text-align: left;
+  padding-left: 3.8%;
+}
+
+/*Customising paragraph text*/
+.conclusion p {
+  color: #FFF; /*White*/
+  font-size: 25px;
+  display: flex;
+  padding-top: 1vh;
+  padding-bottom: 3vh;
+  text-align: left;
+}
+
+/*Link to Sustainable Coastline's website*/
+.conclusion a {
+  color: #2153BD; /*Light blue*/
+}
+
+/*Link's hover*/
+.conclusion a:hover {
+  color: #FFF; /*White*/
+  transition: 0.4s; /*4 seconds*/
+}
+
+/*Scroll to top button*/
+#myBtn {
+  display: block;
+  position: fixed; /*Making sure button sticks to the credits page*/
+  /*Button floating bottom right*/
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  border: 2px solid #FFF; /*White border*/
+  outline: none;
+  cursor: pointer;
+  padding: 14px;
+  color: #FFF; /*White*/
+  background-color: #171670; /*Dark blue*/
+}
+
+/*Hovered button*/
+#myBtn:hover {
+  background: #FFF; /*White*/
+  color: #171670; /*Dark blue*/
+  transition: 0.4s; /*4 seconds*/
+}

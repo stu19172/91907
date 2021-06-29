@@ -1,0 +1,73 @@
+/*CSS document for contact.html*/
+
+/*Customising heading for contact.html*/
+h2 {
+  text-align: center;
+  justify-content: center;
+  color: #2153BD; /*Light blue*/
+  font-size: 50px;
+  padding-top: 12vh;
+}
+
+/*Customising paragraph*/
+p {
+  text-align: center;
+  color: #FFF; /*White*/
+  justify-content: center;
+}
+
+/*Form's margin and width*/
+form {
+  margin: 20px auto;
+  width: 310px;
+}
+
+/*Form's padding and font size*/
+input {
+  padding: 15px;
+  font-size: inherit;
+}
+
+/*Form's text, when user types in each section*/
+input[type="text"] {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  border: 2px solid #FFF; /*White border*/
+  border-radius: 8px; /*Making containers appear round*/
+  background: #33A0BD; /*Cyan*/
+  color: #FFF; /*White*/
+}
+
+/*Submit button*/
+input[type="submit"] {
+  height: 50px;
+  bottom: 10vh;
+  color: #FFF; /*White*/
+  background: #171670; /*Dark blue*/
+  border: 2px solid #FFF; /*White border*/
+}
+
+/*Hover for submit button*/
+input:hover[type="submit"] {
+  background: #2153BD; /*Light blue*/
+  cursor: pointer;
+  transition: 0.4s; /*4 seconds*/
+  border: 2px solid #2153BD; /*Light blue border*/
+}
+
+/*Textarea's font color, and container color*/
+textarea {
+  border: 3px solid #FFF; /*Textarea's border*/
+  border-radius: 4px;
+  padding: 13px 12px;
+  background: #33A0BD; /*Cyan*/
+  color: #FFF; /*White*/
+  width: 100%;
+  font-family: "Roboto", sans-serif; /*Roboto font*/
+}
+
+/*Form's place holder color*/
+::placeholder {
+  color: #FFF; /*White*/
+}

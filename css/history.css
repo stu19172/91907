@@ -1,0 +1,90 @@
+/*CSS document for history.html*/
+
+/*Headings introducing the history page, all aligned in the center. Also its
+text and size are customised*/
+h2 {
+  text-align: center;
+  font-size: 60px;
+  color: #2153BD; /*Light blue*/
+  padding-top: 17vh;
+}
+
+h3 {
+  text-align: center;
+  color: #FFF; /*White*/
+}
+
+/*The gallery only appears, if users click on the arrows*/
+.mySlides {
+  display: none;
+}
+
+/*Aligning gallery images on the center*/
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px; /*Slideshow's max-width is 700px*/
+  position: relative;
+  margin: auto;
+  top: 3vh;
+}
+
+/*Next and previous buttons*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  background: #171670; /*Dark blue*/
+  color: #FFF; /*White*/
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.4s ease; /*4 seconds*/
+  user-select: none;
+}
+
+/*Position the next button to the right*/
+.next {
+  right: 0;
+}
+
+/*Arrows when hovered, white background appears*/
+.prev:hover, .next:hover {
+  color: #2153BD; /*Light blue*/
+  background: #FFF; /*White*/
+  transition: 0.4s; /*4 seconds*/
+}
+
+/*Gallery text*/
+.text {
+  color: #FFF; /*White*/
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background: #2153BD; /*Light blue*/
+}
+
+/*Number text (1/15), 15 images total*/
+.numbertext {
+  color: #FFF; /*White*/
+  font-size: 15px;
+  padding: 8px 6px;
+  position: absolute;
+  top: 2.2vh;
+  background: #171670; /*Dark blue*/
+}
+
+/*On mobile falling under 300px max-width, it decreases text size*/
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {
+    font-size: 11px;
+  }
+}

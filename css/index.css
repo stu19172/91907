@@ -1,0 +1,38 @@
+/*CSS document for index page*/
+
+/*Aligning index page's content in the center*/
+.welcome {
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, -50%); /*Positioning content in the center*/
+    text-align: center; /*Making sure all text is aligned in the center*/
+}
+
+/*Customising Index page's heading*/
+.welcome h2 {
+  color: #33A0BD; /*Cyan*/
+  font-size: 85px;
+}
+
+/*Customising paragraph's font*/
+.welcome p {
+  color: #FFF; /*White*/
+  font-size: 18px;
+}
+
+/*Customising and aligning buttons*/
+.welcome a {
+  border: 2px solid #FFF; /*White border*/
+  padding: 10px 20px;
+  text-decoration: none; /*Removing underlines*/
+  color: #FFF; /*White*/
+  text-transform: uppercase;
+}
+
+/*Button's hover colors*/
+.welcome a:hover {
+  border: 2px solid #2153BD; /*Light blue*/
+  background: #2153BD; /*Light blue*/
+  transition: 0.4s; /*4 seconds*/
+}
